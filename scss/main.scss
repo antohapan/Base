@@ -1,0 +1,29 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+@import "../libs/bootstrap/scss/bootstrap-grid.scss";
+@import "../libs/bootstrap/scss/utilities/sizing";
+@import "extends";
+@import "default";
+
+body {
+  font-size: #{$default-font-size}px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  background: #010101 50% 0 repeat;
+  min-height: 100%;
+  margin: 0;
+
+  .wf-loading & {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+
+@import "media"; // Always at the end

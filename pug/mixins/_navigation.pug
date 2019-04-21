@@ -1,0 +1,17 @@
+mixin navigation_item(name, href, slug, current)
+  if slug == current
+    li.current-menu-ancestor&attributes(attributes)
+      a(href=href)
+        span #{name}
+  else 
+    li&attributes(attributes)
+      a(href=href)
+        span #{name}
+
+mixin navigation(current)
+  ul.menu
+    +navigation_item('Home', '#', 'home', current)(class='menu-item-has-children')
+    +navigation_item('Blog', '#', 'blog', current)
+    +navigation_item('Gallery', '#', 'gallery', current)
+    +navigation_item('Shop', '#', 'shop', current)
+    +navigation_item('Contacts', '#', 'contacts', current)

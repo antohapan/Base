@@ -1,0 +1,15 @@
+Custom Cursor Dates:
+
+data-magic-cursor="link"
+data-magic-cursor="link-small"
+data-magic-cursor="link-w-text" data-magic-cursor-text="Play"
+data-magic-cursor="arrow-right"
+data-magic-cursor="full"
+data-magic-cursor="plus"
+data-magic-cursor="loupe"
+data-magic-cursor="cart"
+
+Site Color Scheme:
+
+dark-scheme - Dark BG & White Color
+light-scheme - Light BG & Black Color
