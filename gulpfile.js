@@ -26,8 +26,7 @@ var gulp = require('gulp'),
   replace = require('gulp-string-replace'),
   lec = require('gulp-line-ending-corrector'),
   zip = require('gulp-zip'),
-  runTimestamp = Math.round(Date.now() / 1000),
-  font_name = 'web-design';
+  runTimestamp = Math.round(Date.now() / 1000);
 
 gulp.task('browser-sync', function () {
   browserSync({
@@ -113,6 +112,7 @@ gulp.task('bp', function () {
     .pipe(gulp.dest('backup/v-' + date));
 });
 
+var font_name = 'iconfont';
 gulp.task('iconfont', function () {
   return gulp.src('fonts/svg/' + font_name + '/*.svg')
     .pipe(iconfontCss({
